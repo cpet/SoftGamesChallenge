@@ -8,9 +8,6 @@ export default class SpritesScreen extends Container {
     private _leftStackPos: Point;
     private _rightStackPos: Point;
 
-    // private _leftStackCount: number = 0;
-    // private _rightStackCount: number = 0;
-
     private _yDiff: number = 10;
 
     constructor() {
@@ -29,9 +26,6 @@ export default class SpritesScreen extends Container {
 
             this.addChild(spr);
         }
-        // this._leftStackCount = 144;
-
-        this.startGame();
     }
 
     startGame() {

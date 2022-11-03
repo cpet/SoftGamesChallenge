@@ -13,26 +13,26 @@ export default class ParticlesScreen extends Container {
 
         let old_config = {
             "alpha": {
-                "start": 0.55,
+                "start": 0.25,
                 "end": 1
             },
             "scale": {
-                "start": 0.3,
-                "end": 0.1,
-                "minimumScaleMultiplier": 0.2
+                "start": 0.4,
+                "end": 0.01,
+                "minimumScaleMultiplier": 0.4
             },
             "color": {
                 "start": "#fcf803",
                 "end": "#f20808"
             },
             "speed": {
-                "start": 3,
+                "start": 5,
                 "end": 0,
                 "minimumSpeedMultiplier": 50
             },
             "acceleration": {
                 "x": 0,
-                "y": -700
+                "y": -500
             },
             "maxSpeed": 0,
             "startRotation": {
@@ -46,10 +46,10 @@ export default class ParticlesScreen extends Container {
             },
             "lifetime": {
                 "min": 0.25,
-                "max": 0.35
+                "max": 0.4
             },
             "blendMode": "normal",
-            "frequency": 0.015,
+            "frequency": 0.005,
             "emitterLifetime": -1,
             "maxParticles": 10,
             "pos": {
@@ -64,8 +64,13 @@ export default class ParticlesScreen extends Container {
             "assets/img/Explo1MC0002.png", "assets/img/Explo1MC0003.png", "assets/img/Explo1MC0004.png"
         ]));
 
+        
+    }
+
+    startGame() {
         this.emitter.emit = true;
         this.emitter.updateSpawnPos(LOGICAL_GAME_SPACE.halfWidth, LOGICAL_GAME_SPACE.halfHeight);
+        this.isRunning = true;
     }
 
     update(delta: number) {

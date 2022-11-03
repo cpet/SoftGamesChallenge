@@ -4,7 +4,7 @@ import { TextAndSprite } from "../tool/TextAndSprite";
 import { TAS_ALIGN, LOGICAL_GAME_SPACE } from "../GG";
 import { gsap } from "gsap";
 
-export default class TextAndSpriteScreen extends Container {
+export default class TextAndSpriteToolScreen extends Container {
 
     words = ["WORD1", "WORD2", "WORD3", "TEXT1", "TEXT2", "TEXT3", "MORE TEXT", "EXTRA WORDS", "SIMPLE WORDS"];
     imageTextureIds = [">>PlayerShip_B8", ">>PlayerShip_A7"];
@@ -19,15 +19,10 @@ export default class TextAndSpriteScreen extends Container {
 
     constructor() {
         super();
-        this.startGame();
     }
 
     startGame() {
         this.startRandomTAS_Popup();
-
-        // let tas1 = TextAndSprite.CreateTAS(["WORD1", ">>PlayerShip_B8", "MORE TEXT"], { bitmapTextStyle: { fontName: "ETH_B_gofa", fontSize: 64 }, align: TAS_ALIGN.verticalRight, margin: 10 });
-        // tas1.startPopAnim(400, 800, -100);
-        // this.addChild(tas1);
     }
 
     pickWordOrSprite(): string {
