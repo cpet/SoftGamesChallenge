@@ -1,5 +1,5 @@
 import { Container, Point, Sprite } from "pixi.js";
-import { LOGICAL_GAME_SPACE } from "../SoftgamesChallenge";
+import { LOGICAL_GAME_SPACE } from "../GG";
 import { gsap } from "gsap";
 
 export default class SpritesScreen extends Container {
@@ -8,8 +8,8 @@ export default class SpritesScreen extends Container {
     private _leftStackPos: Point;
     private _rightStackPos: Point;
 
-    private _leftStackCount: number = 0;
-    private _rightStackCount: number = 0;
+    // private _leftStackCount: number = 0;
+    // private _rightStackCount: number = 0;
 
     private _yDiff: number = 10;
 
@@ -29,7 +29,7 @@ export default class SpritesScreen extends Container {
 
             this.addChild(spr);
         }
-        this._leftStackCount = 144;
+        // this._leftStackCount = 144;
 
         this.startGame();
     }

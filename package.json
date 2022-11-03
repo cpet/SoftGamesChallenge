@@ -1,7 +1,7 @@
 {
     "name": "pixi-typescript-boilerplate",
     "version": "1.0.0",
-    "description": "Apollo challenge",
+    "description": "Softgames challenge",
     "browserslist": "> 0.25%, not dead",
     "scripts": {
         "webpack": "webpack",
@@ -25,6 +25,7 @@
     "author": "chrisp83",
     "license": "MIT",
     "dependencies": {
+        "@pixi/particle-emitter": "^5.0.7",
         "core-js": "^3.20.3",
         "gsap": "^3.10.4",
         "pixi-fps": "^2.0.1",
