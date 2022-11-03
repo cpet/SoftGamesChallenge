@@ -1,4 +1,4 @@
-## Apollo Chalenge (Practical task)
+## Softgames Chalenge (Practical task)
 
 ## Highlights
 
@@ -16,4 +16,4 @@
 -   `npm run code-coverage` - generate code coverage report
 -   `npm run code-style-check` - run's eslint and prettier check on your code
 
-Playable Link: https://cpet.github.io/ApolloChallengePlayable/
+Playable Link: https://cpet.github.io/SoftgamesChallengePlayable/
